@@ -4,7 +4,7 @@ import logo from './assets/tami-logo.png';
 import './App.css';
 
 function App() {
-  const websiteUrl = 'https://www.tami-institute.com'; 
+ const websiteUrl = 'https://tami-web.vercel.app'; // Use your actual Vercel link!
 
   // State to manage the dropdown visibility using mouse events
   const [isProgramsHovered, setIsProgramsHovered] = useState(false);
