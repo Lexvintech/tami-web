@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   // Your future custom domain
-  const websiteUrl = 'https://www.nexalabs.co.tz'; 
+  const websiteUrl = 'https://nexa-intelligence-labs.vercel.app'; 
 
   const [isProgramsHovered, setIsProgramsHovered] = useState(false);
   const [isContactHovered, setIsContactHovered] = useState(false);
