@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import QRCode from 'react-qr-code';
-import logo from './assets/tami-logo.png';
+import logo from './assets/nexa-logo.png';
 import './App.css';
 
 function App() {
- const websiteUrl = 'https://tami-web.vercel.app'; // Use your actual Vercel link!
+  // Your future custom domain
+  const websiteUrl = 'https://www.nexalabs.co.tz'; 
 
-  // State to manage the dropdown visibility using mouse events
   const [isProgramsHovered, setIsProgramsHovered] = useState(false);
   const [isContactHovered, setIsContactHovered] = useState(false);
 
@@ -14,7 +14,7 @@ function App() {
     <div className="app-container">
       {/* Navbar */}
       <nav className="navbar">
-        <div className="nav-logo">TAMI</div>
+        <div className="nav-logo">Nexa Intelligence Labs</div>
         <div className="nav-links">
           <a href="#about">About</a>
           
@@ -45,7 +45,7 @@ function App() {
               <div className="dropdown-menu">
                 <span className="dropdown-text">+255 752 132 002</span>
                 <span className="dropdown-text">+255 798 964 434</span>
-                <a href="mailto:info@tami.co.tz">info@tami.co.tz</a>
+                <a href="mailto:kvinzepha@gmail.com">kvinzepha@gmail.com</a>
               </div>
             )}
           </div>
@@ -54,9 +54,9 @@ function App() {
 
       {/* Hero Section */}
       <main className="hero-section">
-        <img src={logo} alt="TAMI Logo" className="hero-logo" />
-        <h1 className="hero-title">Tanzania Artificial Intelligence and Machine Learning Institute</h1>
-        <p className="hero-slogan">Intelligence Drives Innovation</p>
+        <img src={logo} alt="Nexa Labs Logo" className="hero-logo" />
+        <h1 className="hero-title">Nexa Intelligence Labs</h1>
+        <p className="hero-slogan">DATA SCIENCE | AI | MACHINE LEARNING</p>
         <button className="cta-button">Explore Programs</button>
       </main>
 
@@ -64,14 +64,14 @@ function App() {
       <section className="qr-section">
         <div className="qr-card">
           <h2>Scan to Connect</h2>
-          <p>Scan this QR code with your phone to visit our official homepage. Perfect for your business cards!</p>
+          <p>Scan this QR code with your phone to visit our official homepage.</p>
           
           <div className="qr-wrapper">
             <QRCode 
               value={websiteUrl} 
               size={180} 
               bgColor="#ffffff" 
-              fgColor="#0b318f" 
+              fgColor="#0B2447" 
               level="H" 
             />
           </div>
@@ -80,18 +80,18 @@ function App() {
       </section>
 
       {/* Footer with About Us */}
-      <footer className="footer" id="about">
+      <footer className="footer">
         <div className="footer-content">
           <div className="footer-about">
-            <h3>About TAMI</h3>
+            <h3>About Nexa Intelligence Labs</h3>
             <p>
-              We are a premier institute fundamentally focused on preparing the next generation of <strong>Data Analysts, Machine Learning Experts, and Artificial Intelligence Engineers</strong>. 
-              Join us to master cutting-edge technology, drive digital innovation in Tanzania, and secure your place at the forefront of the global tech revolution.
+              Located in Arusha, Tanzania, we are fundamentally focused on preparing the next generation of <strong>Data Analysts, Machine Learning Experts, and Artificial Intelligence Engineers</strong>. 
+              Join us to master cutting-edge technology, drive digital innovation, and secure your place at the forefront of the global tech revolution.
             </p>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} TAMI. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Nexa Intelligence Labs. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

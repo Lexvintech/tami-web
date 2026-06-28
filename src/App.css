@@ -8,7 +8,7 @@
 
 body {
   background-color: #f4f7f6;
-  color: #333;
+  color: #334155; /* Slate Grey text */
 }
 
 .app-container {
@@ -23,14 +23,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 5%;
-  background-color: #0b318f; /* TAMI Blue */
+  background-color: #0B2447; /* Deep Neural Blue */
   color: white;
 }
 
 .nav-logo {
   font-size: 1.5rem;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .nav-links {
@@ -43,18 +43,18 @@ body {
   text-decoration: none;
   margin-left: 2rem;
   font-weight: 500;
-  transition: opacity 0.3s;
+  transition: color 0.3s;
 }
 
 .nav-links > a:hover {
-  opacity: 0.8;
+  color: #00D2FF; /* Cyber Cyan */
 }
 
 /* Dropdown Container */
 .nav-item-dropdown {
   position: relative;
   margin-left: 2rem;
-  padding: 0.5rem 0; /* Creates an invisible buffer so hover doesn't break */
+  padding: 0.5rem 0;
 }
 
 .nav-item-dropdown > a {
@@ -62,6 +62,11 @@ body {
   text-decoration: none;
   font-weight: 500;
   cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-item-dropdown > a:hover {
+  color: #00D2FF;
 }
 
 /* Dropdown Menu Box */
@@ -82,7 +87,7 @@ body {
 
 .dropdown-menu a, 
 .dropdown-menu .dropdown-text {
-  color: #333;
+  color: #334155;
   padding: 12px 16px;
   text-decoration: none;
   font-size: 0.9rem;
@@ -92,7 +97,7 @@ body {
 
 .dropdown-menu a:hover {
   background-color: #f4f7f6;
-  color: #0b318f;
+  color: #00D2FF;
   font-weight: 600;
 }
 
@@ -109,15 +114,15 @@ body {
   align-items: center;
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #0b318f 0%, #1a4cd2 100%);
+  background: linear-gradient(135deg, #0B2447 0%, #1a365d 100%);
   color: white;
 }
 
 .hero-logo {
-  width: 250px;
+  width: 280px;
   height: auto;
   margin-bottom: 2rem;
-  filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.2));
+  filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.3));
 }
 
 .hero-title {
@@ -128,29 +133,30 @@ body {
 }
 
 .hero-slogan {
-  font-size: 1.2rem;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
   margin-bottom: 2.5rem;
-  opacity: 0.9;
+  color: #00D2FF;
 }
 
 .cta-button {
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
   font-weight: bold;
-  color: #0b318f;
+  color: #0B2447;
   background-color: white;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  background-color: #f8fafc;
 }
 
 /* QR Section */
@@ -171,12 +177,12 @@ body {
 }
 
 .qr-card h2 {
-  color: #0b318f;
+  color: #0B2447;
   margin-bottom: 0.5rem;
 }
 
 .qr-card p {
-  color: #666;
+  color: #64748b;
   font-size: 0.95rem;
   margin-bottom: 2rem;
   line-height: 1.5;
@@ -187,18 +193,18 @@ body {
   padding: 1.5rem;
   border-radius: 10px;
   display: inline-block;
-  border: 2px solid #edf2f7;
+  border: 2px solid #e2e8f0;
 }
 
 .qr-url {
   margin-top: 1.5rem;
   font-weight: bold;
-  color: #0b318f;
+  color: #00D2FF;
 }
 
 /* Expanded Footer */
 .footer {
-  background-color: #061c54;
+  background-color: #06152b; /* Even darker blue for footer */
   color: rgba(255,255,255,0.8);
   padding: 3rem 5% 1.5rem;
 }
@@ -226,7 +232,7 @@ body {
 }
 
 .footer-about strong {
-  color: #60a5fa; /* A lighter blue to make the tech roles pop */
+  color: #00D2FF; 
 }
 
 .footer-bottom {
@@ -236,7 +242,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* Simple animation for dropdown */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
